@@ -4,6 +4,8 @@ MAINTAINER Denis Baryshev <dennybaa@gmail.com>
 ENV HBASE_VERSION 1.4.4
 ENV HBASE_HOME /usr/local/hbase-${HBASE_VERSION}
 ENV HBASE_CONF_DIR /etc/hbase
+ENV HBASE_RPC_TIMEOUT 300000
+ENV HBASE_SCANNER_TIMEOUT 300000
 # Default port to connect Zookeeper to
 ENV ZK_PORT 2181
 

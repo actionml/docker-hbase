@@ -42,12 +42,12 @@
   <!-- Hartonoworks best practices -->
   <property>
     <name>hbase.rpc.timeout</name>
-    <value>300000</value>
+    <value>{{getenv "HBASE_RPC_TIMEOUT"}}</value>
   </property>
 
   <property>
     <name>hbase.client.scanner.timeout.period</name>
-    <value>300000</value>
+    <value>{{getenv "HBASE_SCANNER_TIMEOUT"}}</value>
   </property>
 
   <property>
